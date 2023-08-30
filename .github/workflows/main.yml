@@ -32,4 +32,4 @@ jobs:
       - name: Restart the app
         run: |
           export XDG_RUNTIME_DIR=/run/user/$(id -u)
-          systemctl --user restart sample-app.service
+          systemctl --user restart portfolio.service
