@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
 </head>
 
-<body class="bg-nord-dark">
+<body class="h-full bg-nord-dark">
     <nav class="bg-nord0 text-nord6 font-medium mb-8">
         <div class="container mx-auto">
             <div class="flex justify-between py-4">
@@ -56,9 +56,11 @@
     <div class="main-content text-nord6">
         @RenderBody()
     </div>
+
     <div id="footer">
 
     </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
