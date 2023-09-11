@@ -228,6 +228,8 @@ Styleguide Nord
   Styleguide Nord - Aurora
   */
   --nord15: #b48ead;
+  
+  --nord-darker: #292E39;
 }
 
 /* Classes I can actually use. */ 
@@ -247,6 +249,7 @@ Styleguide Nord
 .bg-nord13 { background-color: var(--nord13); }
 .bg-nord14 { background-color: var(--nord14); }
 .bg-nord15 { background-color: var(--nord15); }
+.bg-nord-dark { background-color: var(--nord-darker); }
 
 .text-nord0 { color: var(--nord0); }
 .text-nord1 { color: var(--nord1); }
@@ -264,6 +267,7 @@ Styleguide Nord
 .text-nord13 { color: var(--nord13); }
 .text-nord14 { color: var(--nord14); }
 .text-nord15 { color: var(--nord15); }
+.text-nord-dark { color: var(--nord-darker); }
 
 .border-nord0 { border-color: var(--nord0); }
 .border-nord1 { border-color: var(--nord1); }
@@ -281,3 +285,4 @@ Styleguide Nord
 .border-nord13 { border-color: var(--nord13); }
 .border-nord14 { border-color: var(--nord14); }
 .border-nord15 { border-color: var(--nord15); }
+.border-nord-dark { border-color: var(--nord-darker); }
