@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./Views/**/*.cshtml"], 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        mint: "#8fbcbb"
+      }
+    },
   },
   plugins: [],
 }
