@@ -17,17 +17,17 @@
 <body class="flex flex-col h-screen justify-between bg-nord-dark">
 
 <nav class="bg-nord0 text-nord6 font-medium mb-8 sticky">
-    <div class="container mx-auto px-10">
+    <div class="container mx-auto sm:px-10 px-5">
         <div class="flex justify-between py-4">
             @* Desktop *@
-            <ul class="hidden md:flex flex space-x-10">
+            <ul class="hidden sm:flex flex space-x-10">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
             @* Mobile *@
-            <ul class="md:hidden flex">
+            <ul class="sm:hidden flex">
                 <button id="nav-button">
                     <i class="fas fa-bars fa-lg"></i>
                 </button>

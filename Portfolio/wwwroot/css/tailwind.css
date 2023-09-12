@@ -669,9 +669,9 @@ video {
      object-fit: contain;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-4 {
@@ -707,11 +707,22 @@ video {
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
-  .md\:flex {
+@media (min-width: 640px) {
+  .sm\:flex {
     display: flex;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
   .md\:hidden {
     display: none;
   }
