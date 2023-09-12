@@ -17,22 +17,31 @@
 <body class="flex flex-col h-screen justify-between bg-nord-dark">
 
 <nav class="bg-nord0 text-nord6 font-medium mb-8 sticky">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-6">
         <div class="flex justify-between py-4">
-            <ul class="flex space-x-10">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/about">About</a>
-                </li>
-                <li>
-                    <a href="/projects">Projects</a>
-                </li>
-                <li>
-                    <a href="/contact">Contact</a>
-                </li>
+            @* Desktop *@
+            <ul class="hidden md:flex flex space-x-10">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
+            @* Mobile *@
+            <ul class="md:hidden flex">
+                <button id="nav-button">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </ul>
+            @* Hamburger items *@
+            <div id="nav-menu" class="md:hidden">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            
             <ul class="flex space-x-5">
                 <li>
                     <a href="https://github.com/chris-dykes-j" target="_blank">
@@ -64,7 +73,6 @@
     </div>
 </div>
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 @await RenderSectionAsync("Scripts", required: false)
 </body>
