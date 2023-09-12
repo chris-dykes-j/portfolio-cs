@@ -23,3 +23,39 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
+
+.wave-one {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-one svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1px);
+    height: 70px;
+}
+
+.wave-one .shape-fill {
+    fill: var(--nord0);
+}
+
+.wave-two {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.wave-two svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1px);
+    height: 30px;
+}
+
+.wave-two .shape-fill {
+    fill: var(--nord-darker);
+}
