@@ -580,6 +580,10 @@ video {
   left: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-full {
   top: 100%;
 }
