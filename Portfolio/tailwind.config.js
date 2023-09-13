@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       colors: {
         mint: "#B9E9E8"
+      },
+      screens: {
+        'hover': {'raw': '(hover: hover)'},
       }
     },
   },
   plugins: [],
 }
-

@@ -813,11 +813,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:text-mint:hover {
-  --tw-text-opacity: 1;
-  color: rgb(185 233 232 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px) {
   .sm\:flex {
     display: flex;
@@ -834,5 +829,12 @@ video {
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+}
+
+@media (hover: hover) {
+  .hover\:text-mint {
+    --tw-text-opacity: 1;
+    color: rgb(185 233 232 / var(--tw-text-opacity));
   }
 }
