@@ -16,14 +16,14 @@
 
 <body class="flex flex-col h-screen justify-between bg-nord-dark">
 
-<nav class="bg-nord0 text-nord6 font-medium mb-8 sticky top-0">
+<nav class="bg-nord1 text-nord6 font-medium mb-8 sticky top-0 z-50">
     <div class="container mx-auto sm:px-10 px-5">
         <div class="flex justify-between py-4">
             @* Desktop *@
             <ul class="hidden sm:flex flex space-x-10">
                 <li><a href="/" class="hover:text-mint">Home</a></li>
-                <li><a href="/projects" class="hover:text-mint">Projects</a></li>
-                <li><a href="#contact" class="hover:text-mint">Contact</a></li>
+                <li><a href="/#projects" class="hover:text-mint">Projects</a></li>
+                <li><a href="/#contact" class="hover:text-mint">Contact</a></li>
             </ul>
             @* Mobile *@
             <ul class="sm:hidden flex">
@@ -32,12 +32,12 @@
                 </button>
             </ul>
             @* Hamburger items *@
-            <div id="nav-menu" class="sm:hidden absolute top-full left-0 w-40 bg-nord0 text-nord6 shadow-lg hidden z-50
+            <div id="nav-menu" class="sm:hidden absolute top-full left-0 w-40 bg-nord0 text-nord6 shadow-lg hidden z-100
                 rounded-br-md">
                 <ul class="flex flex-col space-y-4 p-4">
                     <li><a href="/" class="hover:text-mint">Home</a></li>
-                    <li><a href="/projects" class="hover:text-mint">Projects</a></li>
-                    <li><a href="#contact" class="hover:text-mint">Contact</a></li>
+                    <li><a href="/#projects" class="hover:text-mint">Projects</a></li>
+                    <li><a href="/#contact" class="hover:text-mint">Contact</a></li>
                 </ul>
             </div>
             
