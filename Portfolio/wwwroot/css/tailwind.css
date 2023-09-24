@@ -658,10 +658,6 @@ video {
   height: 100vh;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-40 {
   width: 10rem;
 }
@@ -771,11 +767,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
