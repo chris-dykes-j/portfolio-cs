@@ -26,5 +26,8 @@ module.exports = {
     },
   },
   darkMode: 'class',
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [],
 }
