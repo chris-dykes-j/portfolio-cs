@@ -18,21 +18,28 @@ const observer = new IntersectionObserver(entries => {
 const hiddenElements = document.querySelectorAll('.hide');
 hiddenElements.forEach(el => observer.observe(el));
 
-// Dark Mode Toggle
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark');
-    localStorage.theme = 'dark';
-} else {
-    document.documentElement.classList.remove('dark');
-    localStorage.theme = 'light'
+// Function to set dark mode
+function setDarkMode(isDark) {
+    const mode = isDark ? 'dark' : 'light';
+    const icon = isDark ? 'fa-moon' : 'fa-sun';
+    const removeIcon = isDark ? 'fa-sun' : 'fa-moon';
+
+    document.documentElement.classList.toggle('dark', isDark);
+    localStorage.theme = mode;
+    const iconElement = document.getElementById('dark-mode-icon');
+    iconElement.classList.remove(removeIcon);
+    iconElement.classList.add(icon);
 }
 
+// Initialize Dark or Light mode
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const storedTheme = localStorage.theme;
+const isDarkMode = storedTheme === 'dark' || (!storedTheme && prefersDark);
+
+setDarkMode(isDarkMode);
+
+// Toggle Dark mode
 function toggleDarkMode() {
-    if (localStorage.theme === 'dark') {
-        document.documentElement.classList.remove('dark');
-        localStorage.theme = 'light';
-    } else {
-        document.documentElement.classList.add('dark')
-        localStorage.theme = 'dark';
-    }
+    const isDarkMode = localStorage.theme === 'dark';
+    setDarkMode(!isDarkMode);
 }
