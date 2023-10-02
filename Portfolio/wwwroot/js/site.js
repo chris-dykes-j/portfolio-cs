@@ -1,10 +1,4 @@
-﻿// Navigation Menu
-document.getElementById('nav-button')
-    .addEventListener('click', () => {
-        document.getElementById('nav-menu').classList.toggle('hidden');
-    });
-
-// Animation
+﻿// Animation
 const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
         if (e.isIntersecting) {
