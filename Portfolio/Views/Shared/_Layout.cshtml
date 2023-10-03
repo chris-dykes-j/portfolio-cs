@@ -13,32 +13,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
 </head>
 
-@* The transition is a bit wonky with the colours on load. *@
-<body class="flex flex-col h-screen justify-between bg-nord-dark"> @*transition-all ease-in-out duration-700" >*@
+<body class="flex flex-col h-screen justify-between bg-white2 dark:bg-black1"> 
 
-<nav class="bg-nord-dark text-nord-0 text-nord6 font-medium mb-8 sticky top-0 z-50">
+<nav class="bg-white2 dark:bg-black1 text-black1 dark:text-white3 font-medium mb-8 sticky top-0 z-50">
     <div class="container mx-auto sm:px-10 px-5">
         <div class="flex justify-between py-4">
             @* Desktop *@
             <ul class="flex space-x-5">
-                <li><a href="/" class="hover:text-mint">Home</a></li>
-                <li><a href="/#projects" class="hover:text-mint">Projects</a></li>
-                <li><a href="/#contact" class="hover:text-mint">Contact</a></li>
+                <li><a href="/" class="hover:text-miku dark:hover:text-mint">Home</a></li>
+                <li><a href="/#projects" class="hover:text-miku dark:hover:text-mint">Projects</a></li>
+                <li><a href="/#contact" class="hover:text-miku dark:hover:text-mint">Contact</a></li>
             </ul>
             
             <ul class="flex space-x-5">
                 <li>
-                    <a href="https://github.com/chris-dykes-j" target="_blank" class="hover:text-mint">
+                    <a href="https://github.com/chris-dykes-j" target="_blank" class="hover:text-miku dark:hover:text-mint">
                         <i class="fab fa-github fa-lg"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/christopher-dykes/" target="_blank" class="hover:text-mint">
+                    <a href="https://www.linkedin.com/in/christopher-dykes/" target="_blank" class="hover:text-miku dark:hover:text-mint">
                         <i class="fab fa-linkedin fa-lg"></i>
                     </a>
                 </li>
                 <li>
-                    <a onclick="toggleDarkMode()" style="cursor: pointer;" class="hover:text-mint" >
+                    <a onclick="toggleDarkMode()" style="cursor: pointer;" class="hover:text-miku dark:hover:text-mint" >
                         <i id="dark-mode-icon" class="fas fa-lg"></i>
                     </a>
                 </li>
@@ -47,11 +46,11 @@
     </div>
 </nav>
 
-<div class="main-content text-nord6 grow mt-0">
+<div class="main-content text-black1 dark:text-white3 grow mt-0">
     @RenderBody()
 </div>
 
-<div id="footer" class="bg-nord0 text-nord4 font-regular py-8">
+<div id="footer" class="bg-white2 dark:bg-black1 text-grey2 dark:text-white1 font-regular py-8">
     <div class="flex justify-center">
         <p>&copy; 2023 Christopher Dykes, some rights reserved</p>
     </div>

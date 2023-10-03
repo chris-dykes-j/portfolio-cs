@@ -41,10 +41,6 @@
     height: 70px;
 }
 
-.wave-one .shape-fill {
-    fill: var(--nord0);
-}
-
 .wave-two {
     width: 100%;
     overflow: hidden;
@@ -57,10 +53,6 @@
     display: block;
     width: calc(110% + 1px);
     height: 30px;
-}
-
-.wave-two .shape-fill {
-    fill: var(--nord-darker);
 }
 
 /* Animations */
@@ -100,4 +92,20 @@
     --nord14: #a3be8c;
     --nord15: #b48ead;
     --nord-darker: #292E39;
+
+    --black1: #292E39;
+    --black2: #2e3440;
+    --black3: #3b4252;
+    --grey1: #434c5e;
+    --grey2: #4c566a;
+    --mint: #B9E9E8;
+    --miku1: #94D5BD;
+    --miku2: #449BA2;
+    --blue2: #9EB6D2;
+    --blue3: #8193BB;
+    --white1: #d8dee9;
+    --white2: #e5e9f0;
+    --white3: #eceff4;
+    --red: #C8437C;
+    --yellow: #e3cb6e;
 }
