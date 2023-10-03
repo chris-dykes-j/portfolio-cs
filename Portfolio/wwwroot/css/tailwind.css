@@ -568,16 +568,8 @@ video {
   }
 }
 
-.absolute {
-  position: absolute;
-}
-
 .sticky {
   position: sticky;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .top-0 {
@@ -601,10 +593,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-16 {
